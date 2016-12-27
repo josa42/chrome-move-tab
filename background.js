@@ -1,7 +1,3 @@
-// Copyright (c) 2012 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 function moveSelectedTab(direction) {
   chrome.tabs.getSelected((tab) => {
 
@@ -26,6 +22,5 @@ chrome.commands.onCommand.addListener(function(command) {
     case 'move-tab-left':  return moveSelectedTab('left');
     case 'move-tab-start': return moveSelectedTab('start');
     case 'move-tab-end':   return moveSelectedTab('end');
-
   }
 });
