@@ -10,7 +10,7 @@ function moveSelectedTab(direction) {
     switch (direction) {
       case 'start':  index = 0;  break;
       case 'end':    index = -1; break;
-      case 'left':   index -= 1; break;
+      case 'left':   index = Math.max(0, index - 1); break;
       case 'right':  index += 1; break;
     }
 
