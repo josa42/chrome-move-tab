@@ -1,14 +1,29 @@
 {
+  "manifest_version": 2,
+
   "name": "Move Tab",
   "version": "1.0.0",
-  "description": "",
+
+  "description": "Move tabs with keyboard shortcuts",
+
+  "author": "Josa Gesell",
+
+  "icons": {
+    "16":  "icon-16.png",
+    "48":  "icon-48.png",
+    "128": "icon-128.png"
+  },
+
   "background": {
     "persistent": false,
     "scripts": [
       "background.js"
     ]
   },
-  "permissions": ["tabs"],
+  "permissions": [
+    "tabs"
+  ],
+
   "commands": {
     "move-tab-left": {
       "suggested_key": {
@@ -17,6 +32,7 @@
       },
       "description": "Move Tab to Left"
     },
+
     "move-tab-right": {
       "suggested_key": {
         "default": "Ctrl+Shift+Right",
@@ -24,6 +40,7 @@
       },
       "description": "Move Tab to Right"
     },
+
     "move-tab-start": {
       "suggested_key": {
         "default": "Ctrl+Shift+Up",
@@ -31,6 +48,7 @@
       },
       "description": "Move Tab to Start"
     },
+
     "move-tab-end": {
       "suggested_key": {
         "default": "Ctrl+Shift+Down",
@@ -38,6 +56,5 @@
       },
       "description": "Move Tab to End"
     }
-  },
-  "manifest_version": 2
+  }
 }
